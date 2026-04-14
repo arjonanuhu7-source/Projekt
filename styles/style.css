@@ -1,0 +1,104 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f4f8f4, #e8f0ea);
+    color: #222;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+header {
+    background: linear-gradient(rgba(34, 85, 34, 0.55), rgba(34, 85, 34, 0.55)),
+                url("../images/hero.jpg") center/cover no-repeat;
+    color: white;
+    padding: 80px 20px;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+section h2,
+main h1 {
+    color: #1f5f2c;
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.btn-success,
+.btn-primary {
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.search-box {
+    max-width: 500px;
+    margin: 0 auto 40px auto;
+}
+
+.about-box,
+.contact-box {
+    background-color: white;
+
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #1c2228;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    border-radius: 8px !important;
+}
